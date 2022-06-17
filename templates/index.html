@@ -1,0 +1,14 @@
+<html lang="eng">
+<head>
+    <title>Index page</title>
+</head>
+<body>
+<h1>This is my main page</h1>
+<form method="POST">
+     {% csrf_token %}
+    {{data}}
+    <input type="submit" value="Submit">
+</form>
+{{error}}
+</body>
+</html>
